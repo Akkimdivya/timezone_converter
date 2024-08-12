@@ -1,0 +1,61 @@
+/* Timezone Slider Container */
+.timezone-slider {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--timezone-background);
+    border: 1px solid var(--timezone-border);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Highlight Working Hours */
+  .timezone-slider.working-hour {
+    background-color: var(--working-hour-background);
+  }
+  
+  /* Timezone Name Styling */
+  .timezone-name {
+    flex: 1;
+    margin-right: 10px;
+    color: var(--timezone-text);
+  }
+  
+  /* Timezone Time Styling */
+  .timezone-time {
+    margin-left: 20px;
+    width: 100px;
+    color: var(--timezone-text);
+  }
+  
+  /* Remove Button Styling */
+  .remove-btn {
+    margin-left: 10px;
+    color: #ff4d4d;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    color: #ff1a1a;
+  }
+  
+  @media (max-width: 768px) {
+    .timezone-slider {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .timezone-time {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .remove-btn {
+      align-self: flex-end;
+    }
+  }
+  

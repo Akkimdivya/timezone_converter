@@ -1,0 +1,64 @@
+/* General Styles */
+.timezone-converter {
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 5vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Controls Container */
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid View Styling */
+  .timezone-list.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+  }
+  
+  /* Dark Mode Specific Styles */
+  .dark-mode {
+    --background-color: #04031ada;
+    --text-color: #f5f5f7;
+    --slider-background: #49497a;
+    --slider-handle: #007bffbc;
+    --timezone-background: #28284e66;
+    --timezone-border: #86869f;
+    --timezone-text: #f5f5f7;
+    --button-background: #007bff;
+    --button-color: #ffffff;
+    --working-hour-background: #4b4b8fb7;
+  }
+  
+  /* Light Mode Specific Styles */
+  :root {
+    --background-color: #f9f9f9;
+    --text-color: #333333;
+    --slider-background: #e1e1e1;
+    --slider-handle: #007bff;
+    --timezone-background: #ffffff;
+    --timezone-border: #cccccc;
+    --timezone-text: #333333;
+    --button-background: #007bff;
+    --button-color: #ffffff;
+    --working-hour-background: #e6ffe6;
+  }
+  
+  @media (max-width: 768px) {
+    .timezone-converter {
+      padding: 10px;
+    }
+  }
+  
